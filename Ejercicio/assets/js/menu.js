@@ -8,14 +8,14 @@ $(document).ready(function(){
 
 //hover con fade
     $("ul.clearfix > li > a").hover(function () {
-        $(this).siblings().fadeToggle(800);
+        $(this).siblings().toggle(600);
     });
 
 //Menu Mobile
     $("#mobile-button").click(function () {
         $(this).hide();
         $("#mobile-close").show();
-        $("#menu-container").fadeToggle("solw");
+        $("#menu-container").toggle(500);
     });
 
     $("#mobile-close").click(function () {
